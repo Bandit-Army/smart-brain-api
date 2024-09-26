@@ -15,10 +15,10 @@ const db = knex({
   client: 'pg',
   connection: {
     host: process.env.DATABASE_URL,
-    PGHOST= process.env.PGHOST
-		PGDATABASE= process.env.PGDATABASE
-		PGUSER= process.env.PGUSER
-		PGPASSWORD= process.env.PGPASSWORD
+    PGHOST: process.env.PGHOST,
+		PGDATABASE: process.env.PGDATABASE,
+		PGUSER: process.env.PGUSER,
+		PGPASSWORD: process.env.PGPASSWORD
   },
 });
 
