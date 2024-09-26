@@ -19,7 +19,7 @@ const db = knex({
 	  username: process.env.PGUSER,
 	  password: process.env.PGPASSWORD,
 	  port: 5432,
-	  ssl: 'require'
+	  ssl: { rejectUnauthorized: false }
   },
 });
 
