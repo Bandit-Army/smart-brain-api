@@ -14,10 +14,10 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
   client: 'pg',
   connection: {
-	  host: PGHOST,
-	  database: PGDATABASE,
-	  username: PGUSER,
-	  password: PGPASSWORD,
+	  host: process.env.PGHOST,
+	  database: process.env.PGDATABASE,
+	  username: process.env.PGUSER,
+	  password: process.env.PGPASSWORD,
 	  port: 5432,
 	  ssl: 'require'
   },
